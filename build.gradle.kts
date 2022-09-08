@@ -14,6 +14,7 @@ plugins {
 }
 
 group = "io.github.1c-syntax"
+group = "com.github.evgenyvodyannikov"
 version = gitVersionCalculator.calculateVersion("v")
 
 repositories {
@@ -33,8 +34,9 @@ val sonarQubeVersion = "8.9.0.43852"
 dependencies {
     implementation("org.sonarsource.sonarqube", "sonar-plugin-api", sonarQubeVersion)
 
-    implementation("io.github.1c-syntax", "bsl-language-server", "0.20.0")
+    //implementation("io.github.1c-syntax", "bsl-language-server", "0.20.0")
 
+    implementation("com.github.evgenyvodyannikov", "BSL-LS-extended", "1.0.0")
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.13.4")
 
